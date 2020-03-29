@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/64c5dfbcaf.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/yeti/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/yeti/bootstrap.min.css" />
+
+    
+    <link rel="stylesheet" type=text/css href="style.css">
+
+    <title>Equipment Manager</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center"><i class="fas fa-fingerprint text-colors"></i> </i>Equipment
+        <span class="text-colors"> Manager</span>
+      </h1>
+
+      <form id="rental-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control">
+          </div>
+      
+          <div class="form-group">
+            <label for="item">Item</label>
+            <input type="text" id="item" class="form-control">
+          </div>
+
+            <div class="form-group">
+              <label for="date">Date Rented</label>
+              <input type="text" id="date" class="form-control">
+            </div>
+
+            <input type="submit" value="Log Rental" class="btn btn-onside btn-block">
+          </form>
+
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Item</th>
+                <th>Date Rented</th>
+              </tr>
+            </thead>
+            <tbody id="rental-list"></tbody>
+
+          </table>
+    
+      </div>
+
+      <script src="app.js"></script>
+      
+
+
+
+
